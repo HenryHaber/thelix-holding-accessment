@@ -25,15 +25,19 @@ export default function UserDashboard({ children }) {
     { name: "Bank of America", icon: '/images/Bank-of-America.svg', link: "/dashboard/bank-of-america" },
   ];
 
+  const footerItems = [
+    { name: "Logout", icon: '/images/logout.svg', link: "/#logout" },
+  ]
+
   const isLinkActive = (href) => pathname.includes(href);
 
   return (
       <div className="flex h-screen bg-white overflow-hidden">
         {/* Sidebar */}
-        <aside className={`z-100 fixed inset-y-0 flex w-[320px] flex-col bg-black text-white overflow-y-auto lg:static ${
+        <aside className={`z-100 fixed inset-y-0 flex w-[320px] flex-col bg-black text-white overflow-y-auto justify-between px-2  lg:static ${
           sidebarOpen ? "left-0"  : "-left-[400px]"
         } transition-all duration-300 side-bar`}>
-          <div className="items-center px-2">
+          <div className="items-center ">
            <div className="flex items-center">
            <Logo height="100" width="150" />
             <Button className="ml-auto lg:hidden mb-4" size="icon" variant="ghost" onClick={() => setSidebarOpen(false)}>
@@ -56,7 +60,23 @@ export default function UserDashboard({ children }) {
                   </Link>
               ))}
             </nav>
+
+
           </div>
+          {footerItems.map((item) => (
+              <Link
+                  key={item.name}
+                  href={item.link}
+                  className={`flex items-center my-1 text-nowrap gap-2 p-3 rounded-xl text-md ${
+                      isLinkActive(item.link)
+                      ? "bg-[#A93636] text-white"
+                      : "hover:bg-[#A93636] hover:text-white"
+                  }`}
+              >
+                <Image src={item.icon} alt={item.name} width={20} height={20} />
+                {item.name}
+              </Link>
+          ))}
         </aside>
 
         {/* Main content area */}
