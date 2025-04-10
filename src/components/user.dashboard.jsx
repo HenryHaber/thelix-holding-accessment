@@ -30,12 +30,16 @@ export default function UserDashboard({ children }) {
   return (
       <div className="flex h-screen bg-white overflow-hidden">
         {/* Sidebar */}
-        <aside className="fixed left-0 top-0 z-40 h-full w-[300px] bg-black text-white overflow-y-auto">
-          <div className="p-4">
+        <aside className={`z-100 fixed inset-y-0 flex w-[280px] flex-col bg-black text-white overflow-y-auto lg:static ${
+          sidebarOpen ? "left-0"  : "-left-[280px]"
+        } transition-all duration-300 side-bar`}>
+          <div className="items-center px-2">
+           <div className="flex items-center">
+           <Logo height="100" width="150" />
             <Button className="ml-auto lg:hidden mb-4" size="icon" variant="ghost" onClick={() => setSidebarOpen(false)}>
               <X className="h-4 w-4 text-white" />
             </Button>
-            <Logo height="100" width="150" />
+           </div>
             <nav className="flex flex-col gap-2 mt-4">
               {menuItems.map((item) => (
                   <Link
@@ -56,11 +60,12 @@ export default function UserDashboard({ children }) {
         </aside>
 
         {/* Main content area */}
-        <div className="flex flex-col flex-1 ml-[300px] h-full overflow-hidden">
+        <div className="flex flex-col flex-1 h-full overflow-hidden">
           {/* Header */}
-          <header className="sticky top-0 z-30 flex items-center gap-4 border-b px-6 h-14 lg:h-[60px] bg-white">
-            <Button className="lg:hidden" size="icon" variant="ghost" onClick={() => setSidebarOpen(true)}>
+          <header className="sticky top-0 z-30 flex items-center gap-4 border-b px-2 h-14 lg:h-[60px] bg-white">
+            <Button className="lg:hidden text-black" size="icon" variant="ghost" onClick={() => setSidebarOpen(true)}>
               <Menu className="h-6 w-6" />
+              <span className="sr-only">Toggle sidebar</span>
             </Button>
 
             {/* Search */}
