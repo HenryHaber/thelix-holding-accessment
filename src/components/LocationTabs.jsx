@@ -6,12 +6,13 @@ const LocationTabs = () => {
   const [selectedLocation, setSelectedLocation] = useState('yampa');
 
   return (
-      <div className="mt-4 p-5">
-        <div className="flex gap-4">
+      <div className="mt-4 min-w--80 p-5">
+        <div className="flex gap-4 items-center ">
           <label>
             <input
                 type="radio"
                 name="location"
+                color='#A93636'
                 value="yampa"
                 checked={selectedLocation === 'yampa'}
                 onChange={(e) => setSelectedLocation(e.target.value)}
