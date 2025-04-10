@@ -44,7 +44,16 @@ export default function UserDashboard({ children }) {
               <X className="h-4 w-4 text-white" />
             </Button>
            </div>
+            <div className="flex lg:hidden relative">
+              <Image src="/images/search-normal.svg" alt="Search" width={20} height={20} className="absolute left-3 top-2.5" />
+              <input
+                  type="text"
+                  placeholder="Search Parameter & Params"
+                  className="w-80   pl-10 py-2 border border-gray-300 rounded-lg text-black/60 focus:outline-none focus:ring focus:ring-blue-500"
+              />
+            </div>
             <nav className="flex flex-col gap-2 mt-4">
+
               {menuItems.map((item) => (
                   <Link
                       key={item.name}
