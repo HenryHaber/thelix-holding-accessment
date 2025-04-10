@@ -8,8 +8,8 @@ export default function Logo({height, width}) {
 
   return (
       <>
-        <Link className='bg-white h-14 w-14  justify-center items-center flex rounded-full p-1' href="/">
-            <Image src={'/images/logo.svg'} alt={'logo' }
+        <Link className=' justify-start mb-10 items-center flex  p-1' href="/dashboard">
+            <Image src={'/images/logo.png'} alt={'logo' }
              className={' grid object-contain  '}
              width = {width}
              quality={99}

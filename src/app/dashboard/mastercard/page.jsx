@@ -27,7 +27,7 @@ export default  function dashboard(){
         {loading ? <Loading /> :  (
           <Box>
             <Heading as="h1" size="lg" mb={4}>
-              User Dashboard
+              Mastercard Dashboard
             </Heading>
           </Box>
         )}
