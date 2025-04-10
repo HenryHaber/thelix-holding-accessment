@@ -45,7 +45,7 @@ export default function UserDashboard({ children }) {
                   <Link
                       key={item.name}
                       href={item.link}
-                      className={`flex items-center my-1 gap-2 p-3 rounded-xl text-md ${
+                      className={`flex items-center my-1 text-nowrap gap-2 p-3 rounded-xl text-md ${
                           isLinkActive(item.link)
                           ? "bg-[#A93636] text-white"
                           : "hover:bg-[#A93636] hover:text-white"

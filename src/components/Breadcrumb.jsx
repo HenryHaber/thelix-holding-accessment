@@ -18,7 +18,7 @@ export const Breadcrumb = ({ breadcrumb = [], title = '' }) => {
   return (
       <div className="flex flex-col gap-1">
         {/* Title */}
-        {title && <h2 className="text-2xl font-semibold text-black">{title}</h2>}
+        {title && <h2 className="text-2xl text-nowrap font-semibold text-black">{title}</h2>}
 
         {/* Breadcrumbs */}
         <div className="flex items-center text-sm text-gray-500 gap-1">
