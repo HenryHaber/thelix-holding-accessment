@@ -20,7 +20,7 @@ export const FormForYampa = () => {
                 <option value="option1">Select Option</option>
               </select>
             </div>
-            <div className={'flex flex-col w-1/2 p-3'}>
+            <div className={'flex flex-col w-full md:w-1/2 p-3'}>
               <label>Web Designer</label>
               <select className={'flex border-2 border-gray-50  w-full p-3'}>
                 <option value="option1">Select Option</option>
@@ -34,7 +34,7 @@ export const FormForYampa = () => {
                 <option value="option1">Select Option</option>
               </select>
             </div>
-            <div className={'flex flex-col w-1/2 p-3'}>
+            <div className={'flex flex-col w-full md:w-1/2 p-3'}>
               <label>President of Sales</label>
               <select className={'flex border-2 border-gray-50  w-full p-3'}>
                 <option value="option1">Select Option</option>

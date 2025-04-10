@@ -26,9 +26,9 @@ const Stepper = ({ activeStep }) => {
               {/*>*/}
               {/*  {i + 1}*/}
               {/*</Flex>*/}
-              <h4 className={'py-3 px-3 border-solid border-2 border-gray-100 rounded-full'}>
-                {i + 1}
-              </h4>
+              {/*<h4 className={'py-3 px-3 border-solid border-2 border-gray-100 rounded-full'}>*/}
+              {/*  {i + 1}*/}
+              {/*</h4>*/}
               <Text fontSize="xs" color="gray.500">{step.label}</Text>
             </Flex>
         ))}
