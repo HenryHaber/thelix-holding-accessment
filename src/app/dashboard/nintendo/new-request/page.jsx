@@ -40,7 +40,7 @@ export default  function dashboard(){
     return(
       <PublicLayout breadcrumbTitle={'Nintendo'} breadcrumb={breadcrumbsData}>
         {loading ? <Loading /> :  (
-          <div className={'container px-10 rounded-md'}>
+          <div className={' md:container px-2 md:px-10 rounded-md'}>
             <Stepper activeStep={2} />
             <div className={'bg-white'}>
               <LocationTabs />

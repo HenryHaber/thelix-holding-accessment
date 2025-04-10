@@ -3,7 +3,7 @@ import { Box, FormControl, FormLabel, Input, Textarea, Select } from '@chakra-ui
 
 export const FormForTampa = () => {
   return (
-      <div className={' p-4'}>
+      <div className={''}>
         <form className={'flex flex-col gap-4'}>
           <div className={'flex flex-col '}>
             <label>Web Developer</label>
@@ -13,8 +13,8 @@ export const FormForTampa = () => {
             <label>Marketing Coordinator</label>
             <textarea  placeholder={'Enter asset description'}  className={'p-4 min-h-40 border-2 border-gray-50'}/>
           </div>
-          <div className={'flex-row flex w-full gap-3'}>
-            <div className={'flex flex-col w-1/2 p-3'}>
+          <div className={' flex-col md:flex-row flex w-full gap-3'}>
+            <div className={'flex flex-col w-full md:w-1/2 p-3'}>
               <label>Medical Assistant</label>
               <select className={'flex border-2 border-gray-50  w-full p-3'}>
                 <option value="option1">Select Option</option>
@@ -27,8 +27,8 @@ export const FormForTampa = () => {
               </select>
             </div>
           </div>
-          <div className={'flex-row flex w-full gap-3'}>
-            <div className={'flex flex-col w-1/2 p-3'}>
+          <div className={' flex-col md:flex-row flex w-full gap-3'}>
+            <div className={'flex flex-col w-full md:w-1/2 p-3'}>
               <label>Nursing Assistant</label>
               <select className={'flex border-2 border-gray-50  w-full p-3'}>
                 <option value="option1">Select Option</option>
