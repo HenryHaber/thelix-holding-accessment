@@ -31,6 +31,86 @@ const users = [
     status: 'Liquidated',
     date: 'Jan 24, 2022',
   },
+  {
+    name: 'Miles, Esther',
+    id: '2006754632',
+    category: 'Individual',
+    principal: 'NGN 10,000.00',
+    alias1: 'whiteswan331',
+    alias2: 'bluebear234',
+    status: 'Active',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Black, Marvin',
+    id: '2006754632',
+    category: 'Corporate',
+    principal: 'NGN 10,000.00',
+    alias1: 'bigbear444',
+    alias2: 'brownfish268',
+    status: 'Liquidated',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Miles, Esther',
+    id: '2006754632',
+    category: 'Individual',
+    principal: 'NGN 10,000.00',
+    alias1: 'whiteswan331',
+    alias2: 'bluebear234',
+    status: 'Active',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Black, Marvin',
+    id: '2006754632',
+    category: 'Corporate',
+    principal: 'NGN 10,000.00',
+    alias1: 'bigbear444',
+    alias2: 'brownfish268',
+    status: 'Liquidated',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Miles, Esther',
+    id: '2006754632',
+    category: 'Individual',
+    principal: 'NGN 10,000.00',
+    alias1: 'whiteswan331',
+    alias2: 'bluebear234',
+    status: 'Active',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Black, Marvin',
+    id: '2006754632',
+    category: 'Corporate',
+    principal: 'NGN 10,000.00',
+    alias1: 'bigbear444',
+    alias2: 'brownfish268',
+    status: 'Liquidated',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Miles, Esther',
+    id: '2006754632',
+    category: 'Individual',
+    principal: 'NGN 10,000.00',
+    alias1: 'whiteswan331',
+    alias2: 'bluebear234',
+    status: 'Active',
+    date: 'Jan 24, 2022',
+  },
+  {
+    name: 'Black, Marvin',
+    id: '2006754632',
+    category: 'Corporate',
+    principal: 'NGN 10,000.00',
+    alias1: 'bigbear444',
+    alias2: 'brownfish268',
+    status: 'Liquidated',
+    date: 'Jan 24, 2022',
+  },
 ];
 
 
@@ -59,14 +139,14 @@ export default  function dashboard(){
       <PublicLayout breadcrumbTitle={'Nintendo'} breadcrumb={breadcrumbsData}>
         {loading ? <Loading /> :  (
            <div className="p- max-w-full overflow-x-auto">
-           <div className="flex justify-between items-center mb-4 flex-wrap gap-4">
+           <div className="flex justify-end items-center mb-4 flex-wrap gap-4">
 
              <Link href={'/dashboard/nintendo/new-request'} className="bg-[#B02A2A] text-white px-4 py-2 rounded-md text-sm font-semibold">New Request
              </Link>
            </div>
 
-           <div className="flex flex-wrap justify-between items-center gap-4 mb-4">
-             <div className="flex gap-2 text-sm font-medium p-2 rounded-md">
+           <div className="flex flex-wrap  justify-between items-center gap-4 mb-4">
+             <div className="flex gap-2 text-sm bg-gray-200 font-medium p-2 rounded-md">
                <button className="text-[#B02A2A] bg-white px-3 py-1 rounded">All Records</button>
                <button className="bg-gray-200 px-3 py-1 rounded">Request</button>
              </div>
