@@ -62,39 +62,41 @@ export default function UserDashboard({ children }) {
         {/* Main content area */}
         <div className="flex flex-col flex-1 h-full overflow-hidden">
           {/* Header */}
-          <header className="sticky top-0 z-30 flex items-center gap-4 border-b px-2 h-14 lg:h-[60px] bg-white">
+          <header className="sticky justify-between flex-shrink top-0 z-30 flex  items-center  border-b px-2 h-14 lg:h-[60px] bg-white">
             <Button className="lg:hidden text-black" size="icon" variant="ghost" onClick={() => setSidebarOpen(true)}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle sidebar</span>
             </Button>
 
             {/* Search */}
-            <div className="flex-1 relative">
+            <div className="lg:flex hidden relative">
               <Image src="/images/search-normal.svg" alt="Search" width={20} height={20} className="absolute left-3 top-2.5" />
               <input
                   type="text"
                   placeholder="Search Parameter & Params"
-                  className="w-80 pl-10 py-2 border border-gray-300 rounded-lg text-black/60 focus:outline-none focus:ring focus:ring-blue-500"
+                  className="w-80   pl-10 py-2 border border-gray-300 rounded-lg text-black/60 focus:outline-none focus:ring focus:ring-blue-500"
               />
             </div>
 
-            <p className="text-black text-sm">Thur, Dec 11, 2024 15:32</p>
+            <div className={'flex flex-rown items-center gap-3'}>
+              <p className="text-black text-nowrap text-sm">Thur, Dec 11, 2024 15:32</p>
 
-            <button className="p-2 bg-[#f4f4f4f4] rounded-full">
-              <FaBell className="h-4 w-4 text-black" />
-            </button>
+              <button className="p-2 bg-[#f4f4f4f4] rounded-full">
+                <FaBell className="h-4 w-4 text-black" />
+              </button>
 
-            <button className="p-2 flex items-center gap-2 bg-[#f4f4f4f4] rounded-full">
-              <FaBuilding className="text-black" />
-              <p className="text-black text-sm">Ikoyi Branch</p>
-              <ChevronDown className="h-4 w-4 text-black" />
-            </button>
+              <button className="p-2 hidden lg:flex items-center gap-2 bg-[#f4f4f4f4] rounded-full">
+                <FaBuilding className="text-black" />
+                <p className="text-black text-nowrap text-sm">Ikoyi Branch</p>
+                <ChevronDown className="h-4 w-4 text-black" />
+              </button>
 
-            <button className="p-2 flex items-center gap-2 bg-[#f4f4f4f4] rounded-full">
-              <TbUserSquare className="text-black" />
-              <p className="text-black text-sm">Eric Alawoya</p>
-              <ChevronDown className="h-4 w-4 text-black" />
-            </button>
+              <button className="p-2 lg:flex hidden items-center gap-2 bg-[#f4f4f4f4] rounded-full">
+                <TbUserSquare className="text-black" />
+                <p className="text-black text-sm">Eric Alawoya</p>
+                <ChevronDown className="h-4 w-4 text-black" />
+              </button>
+            </div>
           </header>
 
           {/* Scrollable main content */}
