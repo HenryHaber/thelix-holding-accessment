@@ -25,7 +25,7 @@ export default function UserDashboard({ children }) {
     { name: "Bank of America", icon: '/images/Bank-of-America.svg', link: "/dashboard/bank-of-america" },
   ];
 
-  const isLinkActive = (href) => pathname === href;
+  const isLinkActive = (href) => pathname.includes(href);
 
   return (
       <div className="flex h-screen bg-white overflow-hidden">
