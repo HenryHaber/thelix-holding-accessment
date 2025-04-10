@@ -30,8 +30,8 @@ export default function UserDashboard({ children }) {
   return (
       <div className="flex h-screen bg-white overflow-hidden">
         {/* Sidebar */}
-        <aside className={`z-100 fixed inset-y-0 flex w-[280px] flex-col bg-black text-white overflow-y-auto lg:static ${
-          sidebarOpen ? "left-0"  : "-left-[280px]"
+        <aside className={`z-100 fixed inset-y-0 flex w-[320px] flex-col bg-black text-white overflow-y-auto lg:static ${
+          sidebarOpen ? "left-0"  : "-left-[400px]"
         } transition-all duration-300 side-bar`}>
           <div className="items-center px-2">
            <div className="flex items-center">
