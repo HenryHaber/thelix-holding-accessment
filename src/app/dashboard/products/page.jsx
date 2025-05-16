@@ -36,12 +36,15 @@ export default function Dashboard() {
         const data = await response.json();
 
         // Mocking product structure
+        const categoriesList = ["Category 1", "Category 2", "Category 3", "Category 4"];
         const mockProducts = data.map((item) => ({
           id: item.id,
           name: item.title,
           price: `$${(Math.random() * 100).toFixed(2)}`,
           status: "In Stock",
-          categories: [{ name: "Category 1" }, { name: "Category 2" }],
+          categories: Array.from({length: Math.ceil(Math.random() * 1)}, () => ({
+            name: categoriesList[Math.floor(Math.random() * categoriesList.length)]
+          })),
         }));
 
         setProducts(mockProducts);
@@ -109,7 +112,7 @@ export default function Dashboard() {
 
           {/* Category Filter */}
           <CategoryFilter
-            categories={["All", "Category 1", "Category 2"]}
+            categories={["All", "Category 1", "Category 2", "Category 3", "Category 4"]}
             selectedCategory={selectedCategory}
             onCategoryChange={handleCategoryChange}
           />
