@@ -27,7 +27,7 @@ export default  function dashboard(){
         {loading ? <Loading /> :  (
           <Box>
             <Heading as="h1" size="lg" mb={4}>
-              Luois Vuitton Dashboard
+              Marketing
             </Heading>
           </Box>
         )}

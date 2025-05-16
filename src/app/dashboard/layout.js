@@ -1,11 +1,11 @@
 
-import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import UserDashboard         from '@/components/user.dashboard';
+import {SearchProvider} from "@/context/SearchContext";
 
 
 export const metadata = {
-  title: "QaceTech Dashboard",
+  title: "Thelix Holdings dashboard",
   description: "",
 };
 
@@ -13,11 +13,12 @@ export default function Layout({ children }) {
   return (
 
     <html lang="en">
-    {/*<AuthProvider>*/}
       <body>
+      <SearchProvider>
         <UserDashboard>
           {children}
         </UserDashboard>
+      </SearchProvider>
       </body>
     </html>
   );

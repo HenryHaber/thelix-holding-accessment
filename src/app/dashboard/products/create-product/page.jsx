@@ -28,17 +28,17 @@ export default  function dashboard(){
       path: '/dashboard',
     },
     {
-      label: 'Nintendo',
-      path: '/dashboard/nintendo/',
+      label: 'Products',
+      path: '/dashboard/products/',
     },
     {
-      label: 'New Murabaha Financing ',
-      path: '/dashboard/nintendo/new-request',
+      label: 'Create a Product ',
+      path: '/dashboard/products/create-product',
     },
   ];
 
     return(
-      <PublicLayout breadcrumbTitle={'Nintendo'} breadcrumb={breadcrumbsData}>
+      <PublicLayout breadcrumbTitle={'Products'} breadcrumb={breadcrumbsData}>
         {loading ? <Loading /> :  (
           <div className={' md:container px-2 md:px-10 rounded-md'}>
             <Stepper activeStep={2} />

@@ -1,0 +1,9 @@
+[
+  { "name": "Products", "icon":"<FaBox />", "link": "/dashboard/products", "quantity": "20" },
+  { "name": "Orders", "icon": "<FaShoppingCart />" ,"link": "/dashboard/orders", "quantity": "50"  },
+  { "name": "Customers", "icon": "<FaUsers />", "link": "/dashboard/customers", "quantity": "40"  },
+  { "name": "Analytics", "icon": "<FaChartLine />", "link": "/dashboard/analytics" , "quantity": "" },
+  { "name": "Marketing", "icon": "<FaBullhorn />", "link": "/dashboard/marketing" , "quantity": "" },
+  { "name": "Discounts", "icon": "<FaTags />", "link": "/dashboard/discounts" , "quantity": "" },
+  { "name": "Settings", "icon": "<FaCog />", "link": "/dashboard/settings" , "quantity": "" }
+]

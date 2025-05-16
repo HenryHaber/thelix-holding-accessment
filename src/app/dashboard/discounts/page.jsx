@@ -27,7 +27,7 @@ export default  function dashboard(){
         {loading ? <Loading /> :  (
           <Box>
             <Heading as="h1" size="lg" mb={4}>
-              Pizza Hut Dashboard
+             Discounts
             </Heading>
           </Box>
         )}
