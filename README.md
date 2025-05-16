@@ -1,4 +1,4 @@
-This is a frontend Project for the QaceTech Frontend Assessment
+This is a frontend Project for the Thelix Holdings Frontend Assessment
 
 ## Getting Started
 
