@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import orders from "@/data/orders.json";
 import Loading from "@/components/Loading";
+import PublicLayout from "@/components/PublicLayout";
 
 const OrdersTable = () => {
   const [orderData, setOrderData] = useState([]);
@@ -65,7 +66,14 @@ export default function OrdersPage() {
   }, []);
 
   return (
-      <Box>
+      <PublicLayout
+          className="bg-gray-300"
+          breadcrumbTitle={"Orders"}
+          breadcrumb={[
+            { label: "Dashboard", path: "/dashboard" },
+            { label: "Orders", path: "/dashboard/orders/" },
+          ]}
+      >
         {loading ? (
             <Loading />
         ) : (
@@ -76,6 +84,6 @@ export default function OrdersPage() {
               <OrdersTable />
             </Box>
         )}
-      </Box>
+      </PublicLayout>
   );
 }

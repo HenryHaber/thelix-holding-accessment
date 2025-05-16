@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Box, Heading, Table, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
 import customers from "@/data/customers.json";
 import Loading from "@/components/Loading";
+import PublicLayout from "@/components/PublicLayout";
 
 const CustomerTable = () => {
   const [customerData, setCustomerData] = useState([]);
@@ -63,7 +64,14 @@ export default function Dashboard() {
   }, []);
 
   return (
-      <Box>
+      <PublicLayout
+          className="bg-gray-300"
+          breadcrumbTitle={"Customers"}
+          breadcrumb={[
+            { label: "Dashboard", path: "/dashboard" },
+            { label: "Customers", path: "/dashboard/customers/" },
+          ]}
+      >
         {loading ? (
             <Loading />
         ) : (
@@ -74,6 +82,6 @@ export default function Dashboard() {
               <CustomerTable />
             </Box>
         )}
-      </Box>
+      </PublicLayout>
   );
 }

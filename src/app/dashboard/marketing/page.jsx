@@ -4,6 +4,7 @@ import { Box, Heading } from "@chakra-ui/layout";
 import Dashboard        from '@/components/user.dashboard';
 import Loading               from '@/components/Loading'
 import {useEffect, useState} from 'react';
+import PublicLayout from "@/components/PublicLayout";
 
 /**
  * External Dependencies.
@@ -23,7 +24,14 @@ export default  function dashboard(){
 
     // const {  user, loading} = useAuth();
     return(
-      <Box>
+        <PublicLayout
+            className="bg-gray-300"
+            breadcrumbTitle={"Marketing"}
+            breadcrumb={[
+              { label: "Dashboard", path: "/dashboard" },
+              { label: "Marketing", path: "/dashboard/marketing/" },
+            ]}
+        >
         {loading ? <Loading /> :  (
           <Box>
             <Heading as="h1" size="lg" mb={4}>
@@ -31,6 +39,6 @@ export default  function dashboard(){
             </Heading>
           </Box>
         )}
-      </Box>
+        </PublicLayout>
   )
 }
