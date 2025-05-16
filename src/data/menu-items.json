@@ -1,6 +1,6 @@
 [
   { "name": "Products", "icon":"<FaBox />", "link": "/dashboard/products", "quantity": "" },
-  { "name": "Orders", "icon": "<FaShoppingCart />" ,"link": "/dashboard/orders", "quantity": "20"  },
+  { "name": "Orders", "icon": "<FaShoppingCart />" ,"link": "/dashboard/orders", "quantity": "50"  },
   { "name": "Customers", "icon": "<FaUsers />", "link": "/dashboard/customers", "quantity": ""  },
   { "name": "Analytics", "icon": "<FaChartLine />", "link": "/dashboard/analytics" , "quantity": "" },
   { "name": "Marketing", "icon": "<FaBullhorn />", "link": "/dashboard/marketing" , "quantity": "" },
